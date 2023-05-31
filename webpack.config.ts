@@ -1,4 +1,3 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
 import path from "path";
 import webpack from "webpack";
 import {buildWebpackConfig} from "./config/builders/BuildWebpackConfig";
