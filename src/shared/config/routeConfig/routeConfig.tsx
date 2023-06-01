@@ -2,10 +2,12 @@ import { type RouteObject } from 'react-router'
 import App from 'app/App'
 import { MainPage } from 'pages/MainPage'
 import { AboutPage } from 'pages/AboutPage'
+import { NotFoundPage } from "pages/NotFoundPage"
 
 enum RoutePath {
   'MAIN' = '/',
-  'ABOUT' = '/about'
+  'ABOUT' = '/about',
+  "NOT_FOUND" = '/*',
 }
 
 export const routes: RouteObject[] = [
@@ -17,7 +19,11 @@ export const routes: RouteObject[] = [
       {
         path: RoutePath.ABOUT,
         element: <AboutPage />
+      },
+      {
+        path: RoutePath.NOT_FOUND,
+        element: <NotFoundPage />
       }
     ]
-  }
+  },
 ]
