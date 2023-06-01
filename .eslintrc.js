@@ -6,7 +6,8 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'standard-with-typescript',
-    'plugin:react/jsx-runtime'
+    'plugin:react/jsx-runtime',
+    "plugin:i18next/recommended"
   ],
   overrides: [
   ],
@@ -16,12 +17,16 @@ module.exports = {
     project: ['/home/dokter/Desktop/tut/tsconfig.json']
   },
   plugins: [
-    'react'
+    'react',
+    "i18next"
   ],
   rules: {
     'react/jsx-indent': [2, 4],
     quotes: 0,
     "@typescript-eslint/quotes": "off",
-    '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true }]
+    '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true }],
+    "i18next/no-literal-string": ["error", { markupOnly: true }],
+    "comma-dangle": "off",
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"]
   }
 }
