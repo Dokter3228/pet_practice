@@ -1,7 +1,7 @@
 import './styles/index.scss'
 import { Outlet } from 'react-router-dom'
 import type React from 'react'
-import { Suspense } from 'react'
+import { Suspense, useEffect } from 'react'
 import { useTheme } from 'app/providers/themeProvider/lib/useTheme'
 import { classNames } from 'shared/lib/classNames/classNames'
 import { Navbar } from 'widgets/Navbar'

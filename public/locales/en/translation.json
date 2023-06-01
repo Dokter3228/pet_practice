@@ -2,5 +2,8 @@
   "Test example": "Test example",
   "Translation": "Translation",
   "Language": "English",
-  "Page not found": "Page not found"
+  "Page not found": "Page not found",
+  "Some error just appeared": "Some error just appeared",
+  "Reload the page": "Reload the page",
+  "throw an error!": "throw an error!"
 }

@@ -3,6 +3,7 @@ import App from 'app/App'
 import { MainPage } from 'pages/MainPage'
 import { AboutPage } from 'pages/AboutPage'
 import { NotFoundPage } from "pages/NotFoundPage"
+import { ErrorBoundary } from "app/providers/ErrorBoundary"
 
 enum RoutePath {
   'MAIN' = '/',
@@ -13,7 +14,11 @@ enum RoutePath {
 export const routes: RouteObject[] = [
   {
     path: RoutePath.MAIN,
-    element: <App />,
+
+    element:
+    <ErrorBoundary>
+        <App />
+    </ErrorBoundary>,
     children: [
       { index: true, element: <MainPage /> },
       {
