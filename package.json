@@ -57,11 +57,13 @@
     "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.4",
     "webpack": "^5.84.1",
+    "webpack-bundle-analyzer": "^4.9.0",
     "webpack-cli": "^5.1.1",
     "webpack-dev-server": "^4.15.0"
   },
   "dependencies": {
     "@types/react-router-dom": "^5.3.3",
+    "@types/webpack-bundle-analyzer": "^4.6.0",
     "i18next": "^22.5.0",
     "i18next-browser-languagedetector": "^7.0.2",
     "i18next-http-backend": "^2.2.1",
