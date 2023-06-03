@@ -7,7 +7,9 @@ export default {
   ],
   moduleDirectories: [
     "node_modules",
-    "src"
+  ],
+  modulePaths: [
+    "<rootDir>/src"
   ],
   moduleFileExtensions: [
     "js",
@@ -27,6 +29,7 @@ export default {
   moduleNameMapper: {
     '\\.(css|scss|less)$': 'identity-obj-proxy',
   },
+  // this is a transform function for handling different file formats in tests
   transform: {
     '\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$':
         '<rootDir>/config/__mocks__/fileTransformer.js',
