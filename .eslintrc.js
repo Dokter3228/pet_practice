@@ -29,5 +29,10 @@ module.exports = {
     "i18next/no-literal-string": ["error", { markupOnly: true }],
     "comma-dangle": "off",
     "@typescript-eslint/comma-dangle": ["error", "only-multiline"]
+  },
+  settings: {
+    react: {
+      version: "detect"
+    }
   }
 }
