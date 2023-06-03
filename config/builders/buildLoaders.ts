@@ -40,7 +40,7 @@ export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
     exclude: /node_modules/
   }
 
-  const babelLoader =  {
+  const babelLoader = {
     test: /\.(js|jsx|ts|tsx)$/,
     exclude: /node_modules/,
     use: {
@@ -48,7 +48,7 @@ export function buildLoaders ({ isDev }: BuildOptions): webpack.RuleSetRule[] {
       options: {
         presets: ['@babel/preset-env'],
         plugins: [
-          ["i18next-extract", {locales: ["ru", "en"], keyAsDefaultValue: true}],
+          ["i18next-extract", { locales: ["ru", "en"], keyAsDefaultValue: true }],
         ]
       }
     }
