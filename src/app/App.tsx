@@ -1,15 +1,15 @@
-import './styles/index.scss'
-import { Outlet } from 'react-router-dom'
-import type React from 'react'
-import { Suspense, useEffect } from 'react'
-import { useTheme } from 'app/providers/themeProvider/lib/useTheme'
-import { classNames } from 'shared/lib/classNames/classNames'
-import { Navbar } from 'widgets/Navbar'
-import { Sidebar } from 'widgets/Sidebar'
-import { PageLoader } from "widgets/PageLoader"
+import './styles/index.scss';
+import { Outlet } from 'react-router-dom';
+import type React from 'react';
+import { Suspense } from 'react';
+import { useTheme } from 'app/providers/themeProvider/lib/useTheme';
+import { classNames } from 'shared/lib/classNames/classNames';
+import { Navbar } from 'widgets/Navbar';
+import { Sidebar } from 'widgets/Sidebar';
+import { PageLoader } from "widgets/PageLoader";
 
 const App: React.FC = () => {
-  const { theme } = useTheme()
+  const { theme } = useTheme();
 
   return (
       <div className={classNames('app', {}, [theme])}>
@@ -24,7 +24,7 @@ const App: React.FC = () => {
 
           </div>
       </div>
-  )
-}
+  );
+};
 
-export default App
+export default App;
