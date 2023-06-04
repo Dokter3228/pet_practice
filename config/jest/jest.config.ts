@@ -35,4 +35,4 @@ export default {
         '<rootDir>/config/__mocks__/fileTransformer.js',
   },
   setupFilesAfterEnv: ['<rootDir>/config/jest/setup-jest.ts'],
-}
+};

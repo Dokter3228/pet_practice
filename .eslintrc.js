@@ -28,11 +28,13 @@ module.exports = {
     '@typescript-eslint/strict-boolean-expressions': [0, { allowString: true }],
     "i18next/no-literal-string": ["error", { markupOnly: true }],
     "comma-dangle": "off",
-    "@typescript-eslint/comma-dangle": ["error", "only-multiline"]
+    "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
+    semi: [1, "always"],
+    "@typescript-eslint/semi": "off"
   },
   settings: {
     react: {
       version: "detect"
     }
   }
-}
+};
