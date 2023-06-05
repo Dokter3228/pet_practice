@@ -3,10 +3,15 @@
     color: var(--primary-color)
 }
 
-
 .clear {
     padding: 0;
     border: none;
     background: none;
     outline: none;
+}
+
+.outline {
+    padding: 5px 10px;
+    background:none;
+    border: 1px solid var(--primary-color);
 }
