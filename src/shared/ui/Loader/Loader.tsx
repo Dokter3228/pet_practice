@@ -1,6 +1,6 @@
-import { classNames } from "shared/lib/classNames/classNames"
-import './Loader.scss'
-import { type FC } from "react"
+import { classNames } from "shared/lib/classNames/classNames";
+import './Loader.scss';
+import { type FC } from "react";
 interface LoaderProps {
   className?: string
 }
@@ -18,5 +18,5 @@ export const Loader: FC = ({ className = "" }: LoaderProps) => {
               <div></div>
           </div>
       </div>
-  )
-}
+  );
+};

@@ -1,6 +1,5 @@
-import { lazy } from 'react'
+import { type ComponentClass, type ComponentType, type FunctionComponent, lazy, type LazyExoticComponent } from 'react';
 
-export const MainPageLazy = lazy(async () => await new Promise((resolve) => {
-  // @ts-expect-error
-  setTimeout(() => { resolve(import('./MainPage')) }, 500)
-}))
+export const MainPageLazy: LazyExoticComponent<ComponentType<any>> = lazy<ComponentClass<any> | FunctionComponent<any>>(async () => await new Promise((resolve) => {
+  setTimeout(() => { resolve(import('./MainPage')); }, 500);
+}));

@@ -1,9 +1,9 @@
-import { type RouteObject } from 'react-router'
-import App from 'app/App'
-import { MainPage } from 'pages/MainPage'
-import { AboutPage } from 'pages/AboutPage'
-import { NotFoundPage } from "pages/NotFoundPage"
-import { ErrorBoundary } from "app/providers/ErrorBoundary"
+import { type RouteObject } from 'react-router';
+import App from 'app/App';
+import { MainPage } from 'pages/MainPage';
+import { AboutPage } from 'pages/AboutPage';
+import { NotFoundPage } from "pages/NotFoundPage";
+import { ErrorBoundary } from "app/providers/ErrorBoundary";
 
 enum RoutePath {
   'MAIN' = '/',
@@ -31,4 +31,4 @@ export const routes: RouteObject[] = [
       }
     ]
   },
-]
+];
