@@ -5,11 +5,13 @@ import { type FunctionComponent } from "react";
 interface LangSwitcherProps {
   className?: string
 }
-export const LangSwitcher: FunctionComponent = ({ className }: LangSwitcherProps) => {
+export const LangSwitcher: FunctionComponent<LangSwitcherProps> = ({ className }: LangSwitcherProps) => {
   const { t, i18n } = useTranslation();
 
-  const toggle: Promise = async () => {
+  const toggle = async (): Promise<void> => {
     await i18n.changeLanguage(i18n.language === "ru" ? "en" : "ru");
   };
-  return <Button className={className} theme={ThemeButton.CLEAR} onClick={toggle}>{t("Translation")}</Button>;
+  return <Button className={className} theme={ThemeButton.CLEAR} onClick={() => {
+    void toggle();
+  }} >{t("Translation")}</Button>;
 };
