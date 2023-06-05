@@ -10,6 +10,12 @@ module.exports = {
     "plugin:i18next/recommended"
   ],
   overrides: [
+    {
+      files: ["*.stories.{ts,tsx}", "*.test.{ts,tsx}"],
+      rules: {
+        "i18next/no-literal-string": 0
+      }
+    }
   ],
   parserOptions: {
     ecmaVersion: 'latest',
