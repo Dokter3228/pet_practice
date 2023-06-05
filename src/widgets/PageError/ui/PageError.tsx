@@ -17,7 +17,7 @@ export const PageError: FC = ({ className = "" }: PageErrorProps) => {
   return (
       <div className={classNames(cls.PageError, {}, [className])}>
           {t("Some error just appeared")}
-          <Button onClick={reloadPage} theme={ThemeButton.CLEAR}>
+          <Button onClick={reloadPage} >
               {t("Reload the page")}
           </Button>
       </div>
