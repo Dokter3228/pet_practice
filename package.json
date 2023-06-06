@@ -11,9 +11,11 @@
     "lint:ts:fix": "npx eslint . --ext .ts,.tsx --fix",
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
-    "unit": "jest --config ./config/jest/jest.config.ts",
+    "test:unit": "jest --config ./config/jest/jest.config.ts",
+    "test:ui": "yarn loki test",
+    "test:ui:ok": "yarn loki approve",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
-    "build-storybook": "storybook build"
+    "storybook:build": "storybook build"
   },
   "keywords": [],
   "author": "",
