@@ -32,7 +32,16 @@ jobs:
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:scss
+
       - name: Run unit tests
         uses: borales/actions-yarn@v4
         with:
           cmd: test:unit
+      - name: Build storybook bundle
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: storybook:build
+      - name: Run screenshots loki tests
+        uses: borales/actions-yarn@v4
+        with:
+          cmd: test:ui:ci
