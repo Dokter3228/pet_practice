@@ -37,6 +37,7 @@ module.exports = {
     "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
     semi: [1, "always"],
     "@typescript-eslint/semi": "off",
+    "react/display-name": 0
   },
   settings: {
     react: {
