@@ -5,7 +5,7 @@ import { AboutPage } from 'pages/AboutPage';
 import { NotFoundPage } from "pages/NotFoundPage";
 import { ErrorBoundary } from "app/providers/ErrorBoundary";
 
-enum RoutePath {
+export enum RoutePath {
   'MAIN' = '/',
   'ABOUT' = '/about',
   "NOT_FOUND" = '/*',

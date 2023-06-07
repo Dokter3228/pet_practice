@@ -24,6 +24,12 @@
     .lang {
         margin-left: 0px;
     }
+
+    .link {
+        opacity: 0;
+        transition: 0.3s opacity;
+        width: 0;
+    }
 }
 
 .collapsedBtn {
@@ -34,4 +40,30 @@
 
 .lang {
     margin-left: 20px;
+}
+
+.items {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+}
+
+.item {
+    display: flex;
+    align-items: center;
+}
+
+.item_link {
+    display: flex;
+}
+
+.link {
+    margin-left: 10px;
+    opacity: 1;
+}
+
+.icon {
+    fill: var(--secondary-color)
 }
