@@ -6,17 +6,30 @@
     transition: width 0.3s;
 }
 
-.collapsed {
-    width: var(--sidebar-width-collapsed);
-}
-
-
 .switchers {
     width: 100%;
     position:absolute;
     bottom: 20px;
     display: flex;
     justify-content: center;
+}
+
+.collapsed {
+    width: var(--sidebar-width-collapsed);
+
+    .switchers {
+        flex-direction: column;
+    }
+
+    .lang {
+        margin-left: 0px;
+    }
+}
+
+.collapsedBtn {
+    position: absolute;
+    right: -40px;
+    bottom: 40px;
 }
 
 .lang {

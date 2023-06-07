@@ -21,7 +21,6 @@ const App: React.FC = () => {
                       <Outlet />
                   </div>
               </Suspense>
-
           </div>
       </div>
   );

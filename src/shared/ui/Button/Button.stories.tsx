@@ -1,6 +1,6 @@
 import type { Meta, StoryObj } from '@storybook/react';
 
-import { Button, ThemeButton } from './Button';
+import { Button, ButtonSize, ButtonTheme } from './Button';
 import { ThemeDecorator } from "shared/config/storybook/ThemeDecorator/ThemeDecorator";
 import { Theme } from "app/providers/themeProvider";
 
@@ -26,19 +26,48 @@ export const DefaultDark: Story = {
 };
 
 export const ClearTheme: Story = {
-  render: () => <Button theme={ThemeButton.CLEAR}>Button</Button>
+  render: () => <Button theme={ButtonTheme.CLEAR}>Button</Button>
 };
 
 export const ClearThemeDark: Story = {
   decorators: [ThemeDecorator(Theme.DARK)],
-  render: () => <Button theme={ThemeButton.CLEAR}>Button</Button>
+  render: () => <Button theme={ButtonTheme.CLEAR}>Button</Button>
 };
 
 export const OutlineTheme: Story = {
-  render: () => <Button theme={ThemeButton.OUTLINE}>Button</Button>
+  render: () => <Button theme={ButtonTheme.OUTLINE}>Button</Button>
+};
+
+export const OutlineThemeSizeL: Story = {
+  render: () => <Button theme={ButtonTheme.OUTLINE} size={ButtonSize.L}>Button</Button>
+};
+
+export const OutlineThemeSizeXL: Story = {
+  render: () => <Button theme={ButtonTheme.OUTLINE} size={ButtonSize.XL}>Button</Button>
 };
 
 export const OutlineThemeDark: Story = {
   decorators: [ThemeDecorator(Theme.DARK)],
-  render: () => <Button theme={ThemeButton.OUTLINE}>Button</Button>
+  render: () => <Button theme={ButtonTheme.OUTLINE}>Button</Button>
+};
+
+export const BackgroundTheme: Story = {
+  decorators: [ThemeDecorator(Theme.DARK)],
+  render: () => <Button theme={ButtonTheme.BACKGROUND}>Button</Button>
+};
+
+export const BackgroundInvertedTheme: Story = {
+  render: () => <Button theme={ButtonTheme.BACKGROUND_INVERTED}>Button</Button>
+};
+
+export const SquaredSizeM: Story = {
+  render: () => <Button theme={ButtonTheme.BACKGROUND_INVERTED} square size={ButtonSize.M}>{">"}</Button>
+};
+
+export const SquaredSizeL: Story = {
+  render: () => <Button square size={ButtonSize.L}>{">"}</Button>
+};
+
+export const SquaredSizeXL: Story = {
+  render: () => <Button square size={ButtonSize.XL}>{">"}</Button>
 };
