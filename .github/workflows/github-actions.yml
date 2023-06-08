@@ -25,23 +25,28 @@ jobs:
         with:
           cmd: build:prod
       - name: Typescript linting
+        if: always()
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:ts
       - name: SCSS linting
+        if: always()
         uses: borales/actions-yarn@v4
         with:
           cmd: lint:scss
 
       - name: Run unit tests
+        if: always()
         uses: borales/actions-yarn@v4
         with:
           cmd: test:unit
       - name: Build storybook bundle
+        if: always()
         uses: borales/actions-yarn@v4
         with:
           cmd: storybook:build
       - name: Run screenshots loki tests
+        if: always()
         uses: borales/actions-yarn@v4
         with:
           cmd: test:ui:ci
