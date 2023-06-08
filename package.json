@@ -12,6 +12,9 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config ./config/jest/jest.config.ts",
+    "visual:report": "npm-run-all visual:report:*",
+    "visual:report:json": "node scripts/generate-visual-json-report.js",
+    "visual:report:html": "reg-cli --from .loki/report.json --report .loki/report.html",
     "test:ui": "yarn loki test",
     "test:ui:ok": "yarn loki approve",
     "test:ui:ci": "yarn loki --requireReference --reactUri file:./storybook-static",
@@ -61,6 +64,7 @@
     "loki": "^0.32.0",
     "mini-css-extract-plugin": "^2.7.6",
     "react-refresh": "^0.14.0",
+    "reg-cli": "^0.17.7",
     "sass": "^1.62.1",
     "sass-loader": "^13.3.0",
     "storybook": "^7.0.18",
@@ -88,7 +92,8 @@
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-i18next": "^12.3.1",
-    "react-router-dom": "^6.11.2"
+    "react-router-dom": "^6.11.2",
+    "yarn-run-all": "^3.1.1"
   },
   "loki": {
     "configurations": {
