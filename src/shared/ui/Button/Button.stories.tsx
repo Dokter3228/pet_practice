@@ -34,6 +34,15 @@ export const ClearThemeDark: Story = {
   render: () => <Button theme={ButtonTheme.CLEAR}>Button</Button>
 };
 
+export const ClearInvertedTheme: Story = {
+  render: () => <Button theme={ButtonTheme.CLEAR_INVERTED}>Button</Button>
+};
+
+export const ClearInvertedThemeDark: Story = {
+  decorators: [ThemeDecorator(Theme.DARK)],
+  render: () => <Button theme={ButtonTheme.CLEAR_INVERTED}>Button</Button>
+};
+
 export const OutlineTheme: Story = {
   render: () => <Button theme={ButtonTheme.OUTLINE}>Button</Button>
 };

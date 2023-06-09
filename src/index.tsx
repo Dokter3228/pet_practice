@@ -5,6 +5,7 @@ import {
 } from 'react-router-dom';
 import { ThemeProvider } from 'app/providers/themeProvider';
 import { routes } from 'shared/config/routeConfig/routeConfig';
+import './app/styles/index.scss';
 
 import 'shared/config/i18n/i18n';
 

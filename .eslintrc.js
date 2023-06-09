@@ -25,7 +25,8 @@ module.exports = {
   },
   plugins: [
     'react',
-    "i18next"
+    "i18next",
+    "react-hooks"
   ],
   rules: {
     'react/jsx-indent': [2, 4],
@@ -37,7 +38,9 @@ module.exports = {
     "@typescript-eslint/comma-dangle": ["error", "only-multiline"],
     semi: [1, "always"],
     "@typescript-eslint/semi": "off",
-    "react/display-name": 0
+    "react/display-name": 0,
+    "react-hooks/rules-of-hooks": "error", // Checks rules of Hooks
+    "react-hooks/exhaustive-deps": "error" // Checks effect dependencies
   },
   settings: {
     react: {

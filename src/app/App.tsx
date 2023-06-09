@@ -1,4 +1,3 @@
-import './styles/index.scss';
 import { Outlet } from 'react-router-dom';
 import type React from 'react';
 import { Suspense } from 'react';
