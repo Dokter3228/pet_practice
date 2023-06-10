@@ -10,5 +10,7 @@
   "Short translation": "RU",
   "login": "login",
   "increment": "увеличить",
-  "decrement": "уменьшить"
+  "decrement": "уменьшить",
+  "Enter Login": "Enter Login",
+  "Enter Password": "Enter Password"
 }

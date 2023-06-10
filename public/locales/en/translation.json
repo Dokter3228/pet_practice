@@ -10,5 +10,7 @@
   "Short translation": "EN",
   "login": "login",
   "increment": "increment",
-  "decrement": "decrement"
+  "decrement": "decrement",
+  "Enter Login": "Enter Login",
+  "Enter Password": "Enter Password"
 }
