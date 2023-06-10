@@ -1,4 +1,5 @@
 export default {
+  globals: { _IS_DEV_: true },
   preset: 'ts-jest',
   clearMocks: true,
   testEnvironment: "jsdom",

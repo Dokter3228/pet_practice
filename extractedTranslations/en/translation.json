@@ -7,6 +7,8 @@
   "Some error just appeared": "Some error just appeared",
   "Toggle": "Toggle",
   "Translation": "Translation",
+  "decrement": "decrement",
+  "increment": "increment",
   "login": "login",
   "throw an error!": "throw an error!"
 }

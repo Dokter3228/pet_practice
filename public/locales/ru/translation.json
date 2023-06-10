@@ -8,5 +8,7 @@
   "throw an error!": "выкинуть ошибку!",
   "Toggle": "Дернуть",
   "Short translation": "RU",
-  "login": "login"
+  "login": "login",
+  "increment": "увеличить",
+  "decrement": "уменьшить"
 }

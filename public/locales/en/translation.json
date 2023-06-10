@@ -8,5 +8,7 @@
   "throw an error!": "throw an error!",
   "Toggle": "Toggle",
   "Short translation": "EN",
-  "login": "login"
+  "login": "login",
+  "increment": "increment",
+  "decrement": "decrement"
 }
