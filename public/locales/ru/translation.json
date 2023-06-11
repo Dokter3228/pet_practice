@@ -4,13 +4,17 @@
   "Language": "Русский",
   "Page not found": "Страница не найдена",
   "Some error just appeared": "Произошла какая то ошибка",
-  "Reload the page": "Reload the page",
+  "Reload the page": "Обновить страницу",
   "throw an error!": "выкинуть ошибку!",
   "Toggle": "Дернуть",
   "Short translation": "RU",
-  "login": "login",
+  "login": "войти",
+
   "increment": "увеличить",
   "decrement": "уменьшить",
-  "Enter Login": "Enter Login",
-  "Enter Password": "Enter Password"
+  "Enter Login": "Введите логин",
+  "Enter Password": "Введите парол",
+  "Authorization form": "Форма авторизации",
+  "You passed wrong credentials": "Вы ввели неверные данные",
+  "logout": "logout"
 }

@@ -14,7 +14,8 @@ interface SidebarProps {
 }
 export const Sidebar: FunctionComponent = ({ className = "" }: SidebarProps) => {
   const [collapsed, setCollapsed] = useState(false);
-  const { t } = useTranslation();
+  const { t: tMain } = useTranslation("main");
+  const { t: tAbout } = useTranslation("about");
 
   const onToggle = (): void => { setCollapsed(prev => !prev); };
 
@@ -33,13 +34,13 @@ export const Sidebar: FunctionComponent = ({ className = "" }: SidebarProps) => 
               <div className={cls.item}>
                   <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.MAIN} className={cls.item_link} >
                       <MainIcon className={cls.icon} />
-                      <span className={cls.link}>{t("Main page")}</span>
+                      <span className={cls.link}>{tMain("Main page")}</span>
                   </AppLink>
               </div>
               <div className={cls.item}>
                   <AppLink theme={AppLinkTheme.SECONDARY} to={RoutePath.ABOUT} className={cls.item_link} >
                       <AboutIcon className={cls.icon} />
-                      <span className={cls.link}>{t("About page")}</span>
+                      <span className={cls.link}>{tAbout("About page")}</span>
                   </AppLink>
               </div>
           </div>

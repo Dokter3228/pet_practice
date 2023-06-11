@@ -1,5 +1,6 @@
 {
   "About page": "About page",
+  "Authorization form": "Authorization form",
   "Enter Login": "Enter Login",
   "Enter Password": "Enter Password",
   "Login": "Login",
@@ -10,8 +11,11 @@
   "Some error just appeared": "Some error just appeared",
   "Toggle": "Toggle",
   "Translation": "Translation",
+  "You passed wrong credentials": "You passed wrong credentials",
   "decrement": "decrement",
   "increment": "increment",
   "login": "login",
-  "throw an error!": "throw an error!"
+  "logout": "logout",
+  "throw an error!": "throw an error!",
+  "дogin": "дogin"
 }

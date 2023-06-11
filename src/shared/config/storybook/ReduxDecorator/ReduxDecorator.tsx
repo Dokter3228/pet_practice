@@ -1,10 +1,11 @@
-import { StoreProvider } from "app/providers/StoreProvider";
+import { type StateSchema, StoreProvider } from "app/providers/StoreProvider";
 import { type StoryFn } from "@storybook/react";
 import { type ReactElement } from "react";
+import { type DeepPartial } from "redux";
 
-export const ReduxDecorator = (StoryComponent: StoryFn): ReactElement => (
+export const ReduxDecorator = (initialState: DeepPartial<StateSchema>) => (StoryComponent: StoryFn): ReactElement => (
     <StoreProvider initialState={
-      { counter: { value: 10 } }
+        initialState
     }>
         <StoryComponent />
     </StoreProvider>

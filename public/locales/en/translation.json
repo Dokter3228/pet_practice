@@ -12,5 +12,8 @@
   "increment": "increment",
   "decrement": "decrement",
   "Enter Login": "Enter Login",
-  "Enter Password": "Enter Password"
+  "Enter Password": "Enter Password",
+  "Authorization form": "Authorization form",
+  "You passed wrong credentials": "You passed wrong credentials",
+  "logout": "logout"
 }

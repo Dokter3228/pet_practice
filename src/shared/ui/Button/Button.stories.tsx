@@ -80,3 +80,7 @@ export const SquaredSizeL: Story = {
 export const SquaredSizeXL: Story = {
   render: () => <Button square size={ButtonSize.XL}>{">"}</Button>
 };
+
+export const Disabled: Story = {
+  render: () => <Button disabled={true} theme={ButtonTheme.OUTLINE}>Disabled button</Button>
+};
