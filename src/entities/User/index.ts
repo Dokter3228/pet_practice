@@ -1,3 +1,3 @@
-export { userReducer, userActions } from "entities/User/model/slice/userSlice";
+export { userReducer, userActions } from "./model/slice/userSlice";
 
 export type { UserSchema, User } from './model/types/user';
