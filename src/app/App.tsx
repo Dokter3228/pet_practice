@@ -6,7 +6,7 @@ import { Navbar } from 'widgets/Navbar';
 import { Sidebar } from 'widgets/Sidebar';
 import { PageLoader } from "widgets/PageLoader";
 import { useDispatch } from "react-redux";
-import { userActions } from "entities/User";
+import { userActions } from "../entities/User";
 
 const App: React.FC = () => {
   const dispatch = useDispatch();
