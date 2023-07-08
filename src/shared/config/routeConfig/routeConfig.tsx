@@ -4,10 +4,12 @@ import { MainPage } from 'pages/MainPage';
 import { AboutPage } from 'pages/AboutPage';
 import { NotFoundPage } from "pages/NotFoundPage";
 import { ErrorBoundary } from "app/providers/ErrorBoundary";
+import { ProfilePage } from "pages/ProfilePage";
 
 export enum RoutePath {
   'MAIN' = '/',
   'ABOUT' = '/about',
+  "PROFILE" = "/profile",
   "NOT_FOUND" = '/*',
 }
 
@@ -24,6 +26,10 @@ export const routes: RouteObject[] = [
       {
         path: RoutePath.ABOUT,
         element: <AboutPage />
+      },
+      {
+        path: RoutePath.PROFILE,
+        element: <ProfilePage />
       },
       {
         path: RoutePath.NOT_FOUND,

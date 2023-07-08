@@ -25,5 +25,13 @@
       "password": "123"
     }
   ],
-  "profile": { "name": "typicode" }
+  "profile": {
+    "first": "Gigachad",
+    "lastname": "ThePowerful",
+    "age": 35,
+    "country": "UK",
+    "city": "London",
+    "username": "gigachad",
+    "avatar": "https://en.meming.world/images/en/1/18/Giga_Chad.jpg"
+  }
 }
