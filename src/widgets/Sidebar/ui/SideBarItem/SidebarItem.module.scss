@@ -1,27 +1,26 @@
 .link {
-  margin-left: 10px;
-  opacity: 1;
+    margin-left: 10px;
+    opacity: 1;
 }
 
 .icon {
-  fill: var(--secondary-color)
+    fill: var(--secondary-color)
 }
 
 .item {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 .item_link {
-  display: flex;
+    display: flex;
 }
 
 .collapsed {
-
-  .link {
-    opacity: 0;
-    transition: 0.3s opacity;
-    width: 0;
-  }
+    .link {
+        opacity: 0;
+        transition: 0.3s opacity;
+        width: 0;
+    }
 
 }

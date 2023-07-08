@@ -4,9 +4,11 @@ import { type ReactElement } from "react";
 import { type DeepPartial } from "redux";
 import { type ReducersMapObject } from "@reduxjs/toolkit";
 import { loginReducer } from "features/AuthByUsername/model/slice/loginSlice";
+import { profileReducer } from "entities/Profile";
 
 const defaultAsyncReducers: DeepPartial<ReducersMapObject<StateSchema>> = {
-  loginForm: loginReducer
+  loginForm: loginReducer,
+  profile: profileReducer
 };
 
 export const ReduxDecorator = (initialState: DeepPartial<StateSchema>, asyncReducers?: DeepPartial<ReducersMapObject<StateSchema>>) => (StoryComponent: StoryFn): ReactElement => (
